@@ -1,0 +1,59 @@
+<html>
+<head>
+    <style>
+body{
+    background: grey;
+}
+
+input {
+    text-align: center;
+    border: 1px;
+    border-color: #f2f2f2;
+    box-shadow: 1px 1px 5px grey;
+    margin: 20px;
+    padding: 4px;
+}
+  
+input:hover {
+    border: 2px;
+    border-color: grey;
+    box-shadow: 2px 2px 5px grey;
+}
+button {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+h1 {
+    text: bold;
+    text-align: center;
+    color: teal;
+    font-family: verdana;
+}
+p {
+  color: teal;
+}
+p:hover {
+   color: cyan;
+   text-shadow: teal;
+}
+
+</style>
+</head>
+<body>
+    <h1> Caesar Cipher </h1>
+    <form>
+      Plain Text:<br>
+      <input type='text' name='plain' value="<%= plain %>" ><br>
+      Offset:<br>
+      <input type='number' name='offset' value=<%= offset %> ><br><br>
+      <input type='submit' value='Encrypt' >
+    </form>
+    <p>
+    Cipher Text: <%= cipher %>
+    </p>
+
+</body>
+</html>
